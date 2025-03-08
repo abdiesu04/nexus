@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Verify Your Email</title>
+</head>
+<body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+        <h2 style="color: #2c3e50;">Welcome to AuraSpot Marketplace!</h2>
+        
+        <p>Hi {{ user.first_name }},</p>
+        
+        <p>Thank you for creating an account. To complete your registration, please verify your email address by clicking the button below:</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{ verification_url }}" style="background-color: #3498db; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; display: inline-block;">
+                Verify Email Address
+            </a>
+        </div>
+        
+        <p>Or copy and paste this link in your browser:</p>
+        <p style="background-color: #f8f9fa; padding: 10px; word-break: break-all;">
+            {{ verification_url }}
+        </p>
+        
+        <p>This link will expire in 24 hours.</p>
+        
+        <p>If you didn't create an account, you can safely ignore this email.</p>
+        
+        <hr style="border: none; border-top: 1px solid #eee; margin: 30px 0;">
+        
+        <p style="color: #7f8c8d; font-size: 12px;">
+            Best regards,<br>
+            AuraSpot Marketplace Team
+        </p>
+    </div>
+</body>
+</html> 
